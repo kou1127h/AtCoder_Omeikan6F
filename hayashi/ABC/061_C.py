@@ -4,7 +4,7 @@ def dfs(i, f):
         # return sum(list(map(eval,f)))
 
     # 式 f の末尾に "+" を追加するかしないかして次の数字を追加
-    return dfs(i + 1, f + s[i + 1]) +  dfs(i + 1, f + "+" + s[i + 1])
+    return dfs(i + 1, f + s[i+1])+ dfs(i + 1, f + "+" + s[i + 1])
 
 
 s = input()
